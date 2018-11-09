@@ -54,7 +54,7 @@ Si escribimos la documentacion en *RestructuredText* (.rst), nos puede ser util 
 gui de este lenguaje de marcas. Podemos encontrar muchas en internet, pero para que no tengais
 que buscar os dejo aqui enlace a una de ellas:
 
-http://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html
+http://docutils.sourceforge.net/docs/user/rst/quickref.html
 
 Creacion del repositorio en GitHub
 ------------------------------------
@@ -68,11 +68,13 @@ dice algo como *"New repository"*. Pulsaremos en él y en la pagina que nos apar
 el nombre del nuevo repositorio, en mi caso lo llamare igual que la carpeta de mi sccript, *HelloWorld*,
 y luego pulsaremos en el boton *"Create repositorio"*, hacia el final de la pagina.
 
-.. figure:: GitHubNewRepository.png
+.. figure:: publish_my_script/GitHubNewRepository.png
+   :align: center
 
 Una vez creado nuestro repositorio nos aparecera algo parecido a esto:
 
-.. figure:: GitHubRepositoryCreated.png
+.. figure:: publish_my_script/GitHubRepositoryCreated.png
+   :align: center
 
 Preparar nuestro repositorio local
 ----------------------------------------------
@@ -85,19 +87,22 @@ de gvSIG desktop, selccionaremos en el arbol de la izquierda la carpeta
 de nuestro script, "HelloWorld", y activaremos la opcionde menu 
 *"Herramientas/Git/Clone..."*. 
  
-.. figure:: HerramientasGitClone.png
+.. figure:: publish_my_script/HerramientasGitClone.png
+   :align: center
 
 Nos aparecera el siguiente cuadro de dialogo, en el que pegaremos en la
 caja de texto "Repository URL" la direccion que copiamos de nuestro repositorio
 de GitHub.
 
-.. figure:: HerramientasGitCloneDialog.png
+.. figure:: publish_my_script/HerramientasGitCloneDialog.png
+   :align: center
 
 Y pulsaremos en el boton "Clone repository".
 
 Una vez terminada la operacion nos quedara la ventana algo como:
 
-.. figure:: HerramientasGitCloneDialogFinish.png
+.. figure:: publish_my_script/HerramientasGitCloneDialogFinish.png
+   :align: center
 
 Y pulsaremos el boton "Close".
 
@@ -107,39 +112,45 @@ que acabamos de crear y luego lo sincronizaremos con el de GitHub.
 Teniendo seleccionada en el "arbol" la carpeta de nuestro scritpt
 activaremos la herramienta "Herramientas/Git/Show changes".
 
-.. figure:: HerramientasGitShowChanges.png
+.. figure:: publish_my_script/HerramientasGitShowChanges.png
+   :align: center
 
 Y en la parte inferior de la ventana del editor aparecera una
 pestaña nueva, "Git changes" con la informacion de cambios
 que hay entre el repositorio local de Git que acabamos de crear
 y los fuentes de nuestro script.
 
-.. figure:: HerramientasGitShowChangesPanel.png
+.. figure:: publish_my_script/HerramientasGitShowChangesPanel.png
+   :align: center
 
 Seleccionaremos todos los ficheros en la tabla de cambios (podemos 
 usar las teclas shift y control en conjuncion con el raton para ello),
 y pulsaremos el boton "Commit all/selecteds".
 
-.. figure:: HerramientasGitShowChangesPanelCommit.png
+.. figure:: publish_my_script/HerramientasGitShowChangesPanelCommit.png
+   :align: center
 
 Una vez terminada la operacion la tabla de la pestaña de cambios 
 estara vacia (si no lo esta podemos pulsar el boton "Refresh status").
 
 Entonces pulsariamos el boton "Push" para actualizar los datos en GitHub.
 
-.. figure:: HerramientasGitShowChangesPanelPush.png
+.. figure:: publish_my_script/HerramientasGitShowChangesPanelPush.png
+   :align: center
 
 Aparecera un dialogo en el que deberemos introducir nuestro
 usuario y contraseña de GitHub y pulsaremos en el boton "Push"
 del dialogo. Al terminar la operacion el dialogo quedara algo
 como:
 
-.. figure:: HerramientasGitShowChangesPanelPushOk.png
+.. figure:: publish_my_script/HerramientasGitShowChangesPanelPushOk.png
+   :align: center
 
 Y si volvemos a GitHub, a la pagina del proyecto que habiamos
 creado y le damos actualizar apareceran ya los fuentes.
 
-.. figure:: GitHubMyRepository.png
+.. figure:: publish_my_script/GitHubMyRepository.png
+   :align: center
 
 
 Actualizar el repositorio de GitHub
@@ -160,13 +171,16 @@ Lo primero crearemos un paquete con nuestro script. Usaremos la herramienta
 En el dialogo "Empaquetador de scripts" seleccionaremos la carpeta de nuestro
 script.
 
-.. figure:: HerramientasPackageWizard1.png
+.. figure:: publish_my_script/HerramientasPackageWizard1.png
+   :align: center
 
-.. figure:: HerramientasPackageWizard2.png
+.. figure:: publish_my_script/HerramientasPackageWizard2.png
+   :align: center
 
 Explicacion
 
-.. figure:: HerramientasPackageWizard3.png
+.. figure:: publish_my_script/HerramientasPackageWizard3.png
+   :align: center
 
 Explicacion
 
@@ -182,7 +196,8 @@ install de la instalacion de gvSIG, en mi caso tengo un fichero::
 Ahora iremos a la pagina web de GitHub de nuestro proyecto. Veremos que 
 en la parte de arriba tenemos un enlace que dice "Releases"
 
-.. figure:: GitHubReleases.png
+.. figure:: publish_my_script/GitHubReleases.png
+   :align: center
 
 Y pulsaremos en el boton de "Create a new release".
 
@@ -194,7 +209,8 @@ del fichero "gvspkg" sin la extension, y por ultimo arrastraremos el
 propio fichero gvspkg a donde dice "...Atach binaries..." para
 incluir el paquete dentro de la revision.
 
-.. figure:: GitHubCreateRelease1.png
+.. figure:: publish_my_script/GitHubCreateRelease1.png
+   :align: center
 
 
 Por ultimo pulsaremos el boton "Publish release" para crear la revision.
@@ -207,7 +223,8 @@ Deberemos crear un paquete "gvspki".
 Para eso, tendremos que hacer algunas cosas mas. Por un lado nos quedaremos
 con la URL 
 
-.. figure:: GitHubCreateRelease2.png
+.. figure:: publish_my_script/GitHubCreateRelease2.png
+   :align: center
 
 Y ahora volveremos a la herramienta "Herramientas/Paquete de script" del 
 editor de scripts. Seleccionaremos la carpeta de nuestro script, y daremos
@@ -215,19 +232,22 @@ siguiente hasta llegar al paso XXXX
 
 (Explicacion)
 
-.. figure:: GitHubCreateRelease3.png
+.. figure:: publish_my_script/GitHubCreateRelease3.png
+   :align: center
 
 (Explicacion)
 
 
 Y por ultimo subiremos a la release que hemos creado el fichero gvspki que se acaba de crear.
 
-.. figure:: GitHubEditRelease1.png
+.. figure:: publish_my_script/GitHubEditRelease1.png
+   :align: center
 
 Añadiremos el fichero "gvspki" como un nuevo binario y pulsaremos en
 el boton "Update release".
 
-.. figure:: GitHubEditRelease2.png
+.. figure:: publish_my_script/GitHubEditRelease2.png
+   :align: center
 
 Por ultimo ya solo nos falta una cosa mas... hacer llegar al proyecto
 gvSIG el enlace la revision que acabamos de crear. Es muy importante
