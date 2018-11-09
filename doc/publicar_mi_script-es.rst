@@ -164,7 +164,76 @@ script.
 
 .. figure:: HerramientasPackageWizard2.png
 
+Explicacion
+
 .. figure:: HerramientasPackageWizard3.png
+
+Explicacion
+
 
 Y una vez termine cerraremos la ventana con el boton "Terminar".
 
+Localizaremos el paquete que hemos creado, normalmente en la carpeta
+install de la instalacion de gvSIG, en mi caso tengo un fichero::
+
+  gvSIG-desktop-2.4.0-HelloWorld-1.0.0-0-testing-all-all-j1_7.gvspkg
+
+
+Ahora iremos a la pagina web de GitHub de nuestro proyecto. Veremos que 
+en la parte de arriba tenemos un enlace que dice "Releases"
+
+.. figure:: GitHubReleases.png
+
+Y pulsaremos en el boton de "Create a new release".
+
+
+Pondremos como "Tag version" la misma version que indicamos en la
+creacion del paquete, que figura tambien en el nombre del fichero "gvspkg",
+en mi caso "1.0.0-0". Como "Release title", emplearemos el nombre
+del fichero "gvspkg" sin la extension, y por ultimo arrastraremos el
+propio fichero gvspkg a donde dice "...Atach binaries..." para
+incluir el paquete dentro de la revision.
+
+.. figure:: GitHubCreateRelease1.png
+
+
+Por ultimo pulsaremos el boton "Publish release" para crear la revision.
+
+Con esto tendriamos ya creada la revision, pero aun faltaria algo mas para
+poder incluirla facilmente en el repositorio de complementos de gvSIG.
+
+Deberemos crear un paquete "gvspki".
+
+Para eso, tendremos que hacer algunas cosas mas. Por un lado nos quedaremos
+con la URL 
+
+.. figure:: GitHubCreateRelease2.png
+
+Y ahora volveremos a la herramienta "Herramientas/Paquete de script" del 
+editor de scripts. Seleccionaremos la carpeta de nuestro script, y daremos
+siguiente hasta llegar al paso XXXX
+
+(Explicacion)
+
+.. figure:: GitHubCreateRelease3.png
+
+(Explicacion)
+
+
+Y por ultimo subiremos a la release que hemos creado el fichero gvspki que se acaba de crear.
+
+.. figure:: GitHubEditRelease1.png
+
+Añadiremos el fichero "gvspki" como un nuevo binario y pulsaremos en
+el boton "Update release".
+
+.. figure:: GitHubEditRelease2.png
+
+Por ultimo ya solo nos falta una cosa mas... hacer llegar al proyecto
+gvSIG el enlace la revision que acabamos de crear. Es muy importante
+que la revision contenga los ficheros, gvspkg y gvspki creados tal
+como he indicado, de otra forma no podremos incluirla en el repositorio
+de paquetes.
+
+Un saludo
+Joaquin
