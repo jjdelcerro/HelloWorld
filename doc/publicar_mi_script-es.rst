@@ -121,3 +121,50 @@ usar las teclas shift y control en conjuncion con el raton para ello),
 y pulsaremos el boton "Commit all/selecteds".
 
 .. figure:: HerramientasGitShowChangesPanelCommit.png
+
+Una vez terminada la operacion la tabla de la pestaña de cambios 
+estara vacia (si no lo esta podemos pulsar el boton "Refresh status").
+
+Entonces pulsariamos el boton "Push" para actualizar los datos en GitHub.
+
+.. figure:: HerramientasGitShowChangesPanelPush.png
+
+Aparecera un dialogo en el que deberemos introducir nuestro
+usuario y contraseña de GitHub y pulsaremos en el boton "Push"
+del dialogo. Al terminar la operacion el dialogo quedara algo
+como:
+
+.. figure:: HerramientasGitShowChangesPanelPushOk.png
+
+Y si volvemos a GitHub, a la pagina del proyecto que habiamos
+creado y le damos actualizar apareceran ya los fuentes.
+
+.. figure:: GitHubMyRepository.png
+
+
+Actualizar el repositorio de GitHub
+----------------------------------------------
+
+A partir de aqui, iremos haciendo cambios en nuestro codigo, y utilizando la
+herramienta de "Show changes", iremos viendo los cambios y "commitandolos"
+a nuestro repositorio local. Y cuando queramos usaremos el boton "Push"
+para subir esos cambios a "GitHub".
+
+Crear una "release"
+---------------------
+
+Para crear una revision de nuestro script, tendremos que hacer varias cosas.
+Lo primero crearemos un paquete con nuestro script. Usaremos la herramienta
+"Herramientas/Paquete de script" del editor de scripts.
+
+En el dialogo "Empaquetador de scripts" seleccionaremos la carpeta de nuestro
+script.
+
+.. figure:: HerramientasPackageWizard1.png
+
+.. figure:: HerramientasPackageWizard2.png
+
+.. figure:: HerramientasPackageWizard3.png
+
+Y una vez termine cerraremos la ventana con el boton "Terminar".
+
