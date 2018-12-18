@@ -52,6 +52,7 @@ precise este, deberemos incluir al menos dos ficheros mas:
 En el caso del ejemplo tendremos los siguientes ficheros:
 
 - doc
+
   - captura1.png
   - helloworld.pdf
 
