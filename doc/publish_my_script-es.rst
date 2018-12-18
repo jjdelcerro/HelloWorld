@@ -92,6 +92,9 @@ Preparar nuestro repositorio local
 
 Una vez tenemos el repositorio creado en GitHub_ tendremos que crear una copia en local de él.
 
+.. note:: Es aconsejabla que la primera vez que vayamos a realizar esta operación saquemos copia 
+   de nuestro proyecto para asegurarnos que por error no perdemos ninguna información.
+
 Copiaremos la dirección que aparecía en la caja de texto bajo "**Quick setup**", podemos utilizar el 
 botón que hay a la derecha de esta para hacerlo. Volveremos al *Editor de scripts*
 de `gvSIG desktop`_, seleccionaremos en el árbol de la izquierda la carpeta 
@@ -197,7 +200,9 @@ Luego nos presentara un formulario en el que encontraremos entre otras cosas:
   *texto plano*, pudiendo contener retornos de linea.
   
 - **Categories**.  Aquí irán las categorías o etiquetas asociadas al complemento. Estas se
-  muestran en el administrador de complementos y permite filtrar por ellas.
+  muestran en el administrador de complementos y permite filtrar por ellas. Es aconsejable usar 
+  alguna de las ya existentes, y en caso de necesitar alguna nueva consultarlo con el *proyecto*
+  para asegurarnos de que no va a generarnos ningun problema.
 
 - **Version**. Se trata de un campo muy importante. No deberán rengarse dos revisiones con el 
   mismo numero de versión. El formato es de tres números separado por puntos y un cuarto al 
